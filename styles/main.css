@@ -1,20 +1,44 @@
 @import "details.css";
 @import url("https://fonts.googleapis.com/css?family=Comfortaa|Patua+One");
 
-/*Typography
---------------------------------------------------------------*/
 body,
 button,
 input,
 select,
-textarea {
-	color: #404040;
-	font-family: "Comfortaa", Arial, sans-serif;
-	font-size: 14px;
-	line-height: 1.5;
-}
+textarea,
+p
+	{
+		background-color: #00192c;
+		font-family: "Comfortaa", Arial, sans-serif;
+		font-size: 14px;
+		color: #79deff;
+		line-height: 2;
+	}
 
-h1,h2,h3,h4,h5,h6 {
-  font-family: "Patua One", serif;
-  letter-spacing: 2px;
-}
+h1,h2,h3,h4,h5,h6
+	{
+		font-family: "Patua One", serif;
+		color: #4ed0fc;
+		letter-spacing: 2px;
+	}
+
+body
+	{
+		position: relative;
+		min-height: 100vh;
+		margin: 0;
+	}
+
+body::before
+	{
+		content: "";
+		position: fixed;
+		inset: 0;
+		background-image: url("../images/ChatGPTisMahHomie.png");
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		opacity: 0.07;
+		z-index: -1;
+	}
+	
